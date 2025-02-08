@@ -7,7 +7,7 @@ uint32_t MaxNumKBit(uint32_t N, uint32_t K)
     for (uint32_t i = 0; i <= 32 - K; i++)
     {
         uint32_t seq = (N >> i) & ((1 << K) - 1);
-        if (sequence > max)
+        if (seq > max)
         {
             max = seq;
         }
